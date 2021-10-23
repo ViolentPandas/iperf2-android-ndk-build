@@ -2,12 +2,19 @@
 
 # 本项目仅供学习使用！！！
 
-目的：使用ndk编译iperf 2源码，生成可执行文件
-iperf2源码版本：V2.1.4
-源码来源：https://sourceforge.net/p/iperf2/code/ci/2-1-4/tree/
+目的：使用ndk编译iperf 2源码，生成可执行文件   
+iperf2源码版本：V2.1.4   
+源码来源：https://sourceforge.net/p/iperf2/code/ci/2-1-4/tree/   
 
-## 伸手党使用方法：下载output目录中的压缩文件。
-## 使用命令（参考）
+## 编译方法
+已测试ndk版本：r21e/r22b/r23b(window环境)
+```
+cd iperf2-android-ndk-build/
+ndk-build
+```
+
+## 伸手党使用方法：下载output目录中的压缩文件。  
+## 使用命令（参考）   
 ```
 ##查看abi版本
 adb shell getprop ro.product.cpu.abi
